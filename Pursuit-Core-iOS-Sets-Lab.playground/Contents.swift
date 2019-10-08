@@ -86,7 +86,10 @@ let numsTwo: Set<Int>  = [1, 2, 3, 4, 5, 6]
 let numsThree: Set<Int>  = [5, 6, 7, 8, 9, 10, 11, 12]
 let numsFour: Set<Int>  = [1, 3, 4, 5, 6, 7, 9]
 var allNumsWithNoDuplicates: Set<Int> = []
-allNumsWithNoDuplicates = 
+var numsOneAndTwo = numsOne.union(numsTwo)
+var numsThreeAndFour = numsThree.union(numsFour)
+allNumsWithNoDuplicates = numsOneAndTwo.union(numsThreeAndFour)
+print(allNumsWithNoDuplicates.sorted())
 
 // Your code here
 
